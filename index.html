@@ -18,23 +18,19 @@
       z-index: 1;
       width: 100%;
       margin: 0 !important;
-      min-height: calc(100vh - 50px);
+      min-height: clamp(230px, 28.18vw, 420px);
       display: flex !important;
       align-items: center;
       justify-content: center;
-      padding: 4rem 1.25rem;
+      padding: 2rem 1.25rem;
       overflow: hidden;
-      background-color: #0b0907 !important;
-      background-image: url('./AIM.png') !important;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      background: #0b0907 url('./AIM.png') center center / cover no-repeat !important;
     }
     .brand-introduction::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(7, 5, 2, 0.55), rgba(7, 5, 2, 0.22) 50%, rgba(7, 5, 2, 0.55)), rgba(7, 5, 2, 0.18);
+      background: transparent !important;
       pointer-events: none;
     }
     .brand-introduction__inner {
@@ -56,15 +52,15 @@
       text-align: center;
     }
     .brand-introduction .paragraph-text-2 {
-      color: #fff5d6 !important;
-      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.8);
+      color: #1e1206 !important;
+      text-shadow: 0 1px 0 rgba(255, 245, 207, 0.65);
     }
     .brand-introduction .blockquote-2 {
       max-width: 600px;
       margin: 0 auto;
       text-align: center;
-      color: #fff4d7 !important;
-      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.85);
+      color: #1e1206 !important;
+      text-shadow: 0 1px 0 rgba(255, 245, 207, 0.65);
     }
     .brand-introduction__mark {
       display: inline-block;
@@ -102,7 +98,7 @@
       line-height: 1.45;
     }
     @media (max-width: 575px) {
-      .brand-introduction { min-height: calc(100vh - 48px); padding: 4rem 1rem; background-position: center center; }
+      .brand-introduction { min-height: 255px; padding: 2rem 1rem; background-position: center center; }
       .brand-introduction__inner { padding: 2.25rem 1.25rem 2rem; }
       .brand-introduction__title { font-size: 1.72rem; letter-spacing: 0.23em; text-indent: 0.23em; }
     }
